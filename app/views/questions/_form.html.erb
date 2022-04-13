@@ -1,0 +1,21 @@
+
+<%= form_with model: @questions do |f|%>
+    <div class="mb-3 row">
+
+        <%= f.label :title , class:"fs-3 col-sm-2 co-form-label" %> 
+    
+        <div class="col-sm-10">
+            <%= f.text_field :title ,  class:"form-control rounded-3 border border-primary" %>
+        </div>
+
+    </div>
+    <div class="mb-3 row">        
+        <%= f.label :body, class:"fs-3 col-sm-2 co-form-label" %>
+        
+        <div class="col-sm-10">
+             <%= f.text_area :body ,  class:"form-control rounded-3 border border-primary"%>
+        </div>
+    </div>
+        <%= f.submit 'Submit' , class: "btn btn-primary" %>
+<% end%>
+
