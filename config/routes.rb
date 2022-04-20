@@ -1,5 +1,10 @@
 Rails.application.routes.draw do
-  root 'main#index'
-
-  resources :questions
-end
+  resources :questions do
+    resources :answers
+  end
+    
+    
+    
+    root 'main#index'
+  end
+  

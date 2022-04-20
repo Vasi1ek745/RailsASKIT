@@ -7,6 +7,7 @@ class QuestionsController < ApplicationController
 
   def show
     
+    
   end
 
   def new
@@ -37,7 +38,7 @@ class QuestionsController < ApplicationController
   end
 
   def destroy
-    @questions.destroy
+      @questions.destroy
 
     redirect_to questions_path
   end
